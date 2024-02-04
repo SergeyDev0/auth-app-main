@@ -1,0 +1,36 @@
+.article {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  padding-left: 5rem;
+
+  &::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: -80px;
+    width: 800px;
+    height: 800px;
+    background-image: url('../../../img/background-circle.png');
+    background-size: 800px 800px;
+    background-repeat: no-repeat;
+    z-index: -1;
+  }
+
+  &__title {
+    font-size: 75px;
+    font-weight: 600;
+  }
+
+  &__description {
+    font-size: 23px;
+    font-weight: 500;
+    line-height: 1.2;
+
+    &-link {
+      font-weight: 600;
+      color: #4461F2;
+    }
+  }
+}

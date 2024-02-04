@@ -1,0 +1,30 @@
+.input {
+  box-sizing: border-box;
+  width: 400px;
+  padding: 21px 20px;
+  border-radius: 10px;
+  background-color: #EAF0F7;
+  color: #4F555A;
+  font-weight: 500;
+  font-size: 18px;
+
+  &::placeholder {
+    font-size: 18px;
+    font-weight: 500;
+    color: #4F555A;
+  }
+
+  &-wrapper {
+    position: relative;
+  }
+}
+
+.clean, .show_password {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  top: 0;
+  bottom: 0;
+  right: 20px;
+  margin: auto;
+}
